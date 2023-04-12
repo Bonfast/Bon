@@ -1,0 +1,15 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+money=int(input("Введите сумму:"))
+TKB=per_cent.get('ТКБ')
+B1=money*TKB/100
+CKB=per_cent.get('СКБ')
+B2=money*CKB/100
+BTB=per_cent.get('ВТБ')
+B3=money*BTB/100
+CBER=per_cent.get('СБЕР')
+B4=money*CBER/100
+deposit=[B1, B2, B3, B4]
+print(list(map(int,deposit)))
+
+max_number=max(list(map(int,deposit)))
+print("Максимальная сумма, которую вы можете заработать:", max_number)

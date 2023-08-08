@@ -6,8 +6,8 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class TestPetFriendsPage(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome()  # Используйте драйвер вашего браузера
-        self.driver.implicitly_wait(10)  # Неявное ожидание в течение 10 секунд
+        self.driver = webdriver.Chrome()
+        self.driver.implicitly_wait(10)
         self.driver.get("https://petfriends.skillfactory.ru/my_pets")
 
     def tearDown(self):
